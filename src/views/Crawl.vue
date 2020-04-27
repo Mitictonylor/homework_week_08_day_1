@@ -43,7 +43,7 @@ export default {
 .intro {
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 20%;
     z-index: 1;
     animation: intro 6s ease-out 1s;
     color: rgb(75, 213, 238);
@@ -70,7 +70,7 @@ export default {
 .logo {
     position:absolute;
     top: 20%;
-    left: 45%;
+    left: 10%;
     z-index: 1;
     margin: auto;
     animation: logo 9s ease-out 9s;
