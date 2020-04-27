@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="light-background">
+  <div >
 
     <router-view id="view"></router-view>
   </div>
@@ -15,12 +15,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.light-background{
-  background-color: rgba(255,255,255, 0.35);
-  padding: 5px;
-  margin: 0;
-  display: block;
-  width: 100%;
-}
 
 </style>

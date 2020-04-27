@@ -1,8 +1,8 @@
 <template lang="html">
   <div>
     <img src="@/assets/logo.svg" alt="">
-    <film-list :films="films"></film-list>
-    <film-detail v-if="selectedFilm" :selectedFilm="selectedFilm"></film-detail>
+    <film-list class='light-background' :films="films"></film-list>
+    <film-detail  class='light-background' v-if="selectedFilm" :selectedFilm="selectedFilm"></film-detail>
   </div>
 
 </template>
@@ -33,5 +33,15 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
+.light-background{
+  background-color: rgba(255,255,255, 0.35);
+  padding: 5px;
+  margin: 0px auto 0px auto;
+  display: inline;
+  width: 100%;
+  display: table;
+
+}
+
 </style>
