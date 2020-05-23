@@ -1,5 +1,5 @@
 <template lang="html">
-<div>
+<div >
   <li>Name: {{character.name}}</li>
   <li>Height: {{character.height |fixHeight}} </li>
   <li>Homeworld name: {{homeworld.name}}</li>
@@ -14,7 +14,7 @@ export default {
   props:['character'],
   data(){
     return{
-      homeworld: null
+      homeworld: []
     }
   },
   methods:{

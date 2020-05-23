@@ -6,7 +6,7 @@
   <p>Director: {{selectedFilm.director}}</p>
   <p>Characters: </p>
 <ul>
-<character-detail v-for="(character,index) in characters" :key="index" :character="character"></character-detail>
+<character-detail v-if="characters.length" v-for="(character,index) in characters" :key="index" :character="character"></character-detail>
 </ul>
 </div>
 </template>

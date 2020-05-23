@@ -1,10 +1,18 @@
 <template lang="html">
-  <div>
-    <img src="@/assets/logo.svg" alt="">
-    <film-list class='light-background' :films="films"></film-list>
-    <film-detail  class='light-background' v-if="selectedFilm" :selectedFilm="selectedFilm"></film-detail>
-  </div>
+  <div class = "wrapper">
+    <div class="logo">
+    <img src="@/assets/logo.svg" width="300" height="150"alt="">
+    </div>
 
+    <div class = "film-list">
+    <film-list :films="films"></film-list>
+    </div>
+
+    <div class = "film-details">
+    <film-detail  class='light-background' v-if="selectedFilm" :selectedFilm="selectedFilm"></film-detail>
+    </div>
+
+  </div>
 </template>
 
 <script>
@@ -34,8 +42,26 @@ export default {
 </script>
 
 <style lang="css">
+
+.logo {
+  display: inline;
+   margin-left: 50%;
+}
+.wrapper {
+  display: inline;
+
+
+}
+.film-list {
+  width: 30%;
+}
+
+.film-details {
+  width: 30%;
+}
 .light-background{
-  background-color: rgba(255,255,255, 0.35);
+  color: yellow;
+  font-size: 20px;
   padding: 5px;
   margin: 0px auto 0px auto;
   display: inline;
